@@ -36,4 +36,20 @@ z = np.eye(3)
 
 # Create a 3x3x3 array with random values
 z = np.random.random((3, 2, 2))
+# print(z)
+
+# 12 Create a 10x10 array with random values and find the minimum and maximum values
+z = np.random.random((10, 10))
+min, max = z.min(), z.max()
+# print(min, max)
+
+# 13 Create a random vector of size 30 and find the mean value
+z = np.random.random(30)
+m = z.mean()
+print(m)
+
+# 14 Create a 2d array with 1 on the border and 0 inside
+z = np.ones((10, 10))
+z[1:-1, 1:-1] = 0
 print(z)
+print(type(z))
